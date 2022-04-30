@@ -5,7 +5,7 @@
   <div class="column is-one-third">
     <nav class="panel is-primary">
       <p class="panel-heading">
-        <%= @entry.meal_type %>
+        <%= @entry.meal_type %>  | <%= @entry.category.title if @entry.category.presence %>
       </p>
       <p class="panel-block">
         Calories: <%= @entry.calories %>
